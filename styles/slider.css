@@ -1,0 +1,41 @@
+.track-wrapper {
+  width: 100%;
+  overflow: hidden;
+  mask: linear-gradient(90deg, transparent 0, black 15% 85%, transparent) 0 50% / 100% calc(100% - (2 * 1.25rem)) no-repeat,
+    linear-gradient(0deg, black, black) 50% 0 / 100% 1.25rem no-repeat,
+    linear-gradient(0deg, black, black) 50% 100% / 100% 1.25rem no-repeat;
+  -webkit-mask: linear-gradient(90deg, transparent 0, black 15% 85%, transparent) 0 50% / 100% calc(100% - (2 * 1.25rem)) no-repeat,
+    linear-gradient(0deg, black, black) 50% 0 / 100% 1.25rem no-repeat,
+    linear-gradient(0deg, black, black) 50% 100% / 100% 1.25rem no-repeat;
+}
+
+.slider-img {
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+}
+
+.track {
+  --size: clamp(200px, 600px, 600px);
+  height: var(--size);
+  width: 100%;
+  display: flex;
+  overflow: overlay;
+  gap: 1.25rem;
+  list-style-type: none;
+  margin: 0;
+  padding: 1.25rem 33%;
+  scroll-snap-type: x mandatory;
+  mask: radial-gradient(#0000 0 30%, #000 30.5%) 50% calc(var(--size) * 0.5) / 300% 100%,
+    linear-gradient(0deg, black, black) 50% 0 / 100% 1.25rem no-repeat,
+    linear-gradient(0deg, black, black) 50% 100% / 100% 1.25rem no-repeat;
+  -webkit-mask: radial-gradient(#0000 0 30%, #000 30.5%) 50% calc(var(--size) * 0.5) / 300% 100%,
+    linear-gradient(0deg, black, black) 50% 0 / 100% 1.25rem no-repeat,
+    linear-gradient(0deg, black, black) 50% 100% / 100% 1.25rem no-repeat;
+}
+
+.track__item {
+  height: 100%;
+  aspect-ratio: 16/9;
+  scroll-snap-align: center;
+}

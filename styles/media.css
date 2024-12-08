@@ -1,0 +1,142 @@
+@media (max-width: 950px) {
+  .check-btn {
+    display: flex;
+    align-items: center;
+  }
+  .nav-list {
+    position: fixed;
+    width: 100%;
+    border-radius: 35px;
+    background: var(--white);
+    -webkit-box-shadow: 0px 0px 34px 0px rgba(34, 60, 80, 0.1);
+    -moz-box-shadow: 0px 0px 34px 0px rgba(34, 60, 80, 0.1);
+    box-shadow: 0px 0px 34px 0px rgba(34, 60, 80, 0.1);
+    top: 90px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+    flex-wrap: wrap;
+  }
+  nav .nav-list li {
+    display: block;
+    margin: 25px 0;
+    line-height: 30px;
+    flex-grow: 1;
+    width: 100%;
+  }
+  nav .nav-list li a {
+    opacity: 1;
+    font-size: 20px;
+  }
+  .header__container:has(#check:checked) .nav-list {
+    left: 0;
+  }
+
+  .main__media__img {
+    max-width: 230px;
+  }
+
+  .main__text__title {
+    font-size: 49px;
+  }
+
+  .services__wrapper {
+    flex-wrap: wrap;
+  }
+  .services__cards {
+    flex-wrap: wrap;
+  }
+  .travel__wrapper img {
+    max-width: 500px;
+  }
+  .features__media {
+    display: none;
+  }
+  [class*='__graphic'] {
+    display: none;
+  }
+
+  .subtitle {
+    font-size: 20px;
+  }
+
+  .title {
+    font-size: 36px;
+  }
+
+  body {
+    --fs-main: 16px;
+    --fs-16: 14px;
+  }
+}
+@media (max-width: 800px) {
+  .travel__wrapper::before {
+    background: none;
+  }
+
+  .travel__wrapper img {
+    display: none;
+  }
+
+  .features__wrapper {
+    flex-wrap: wrap;
+  }
+
+  .track__item {
+    aspect-ratio: 14 / 14;
+  }
+}
+@media (max-width: 700px) {
+  .main {
+    flex-wrap: wrap;
+  }
+
+  .track {
+    mask: none;
+    -webkit-mask: none;
+  }
+
+  .subscription::before {
+    display: none;
+  }
+
+  .features__wrapper::before {
+    display: none;
+  }
+
+  .subscription__email__input, .subscription__email__btn {
+    height: 46px;
+    font-size: 16px;
+  }
+
+  .subscription__email__input {
+    padding: 12px 0 12px 40px;
+  }
+
+  .subscription__email__input__icon {
+    height: 40%;
+    left: 16px;
+  }
+
+  .subscription__wrapper {
+    padding: 64px 32px;
+  }
+
+  .subscription__email {
+    gap: 32px;
+  }
+}
+
+@media (max-width: 470px) {
+  .main__text__actions_purple {
+    padding: 12px;
+  }
+
+  .login__actions {
+    gap: 10px;
+  }
+
+  .response {
+    width: 370px;
+  }
+}

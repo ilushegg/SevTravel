@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <a href="/" class="logo">
+          <img class="logo__icon" src="./assets/icons/logo.svg" />
+          <span class="logo__title">СевМир</span>
+        </a>
+
+        <nav>
+          <ul class="nav-list">
+            <li class="nav-list__item"><a class="nav-list__item__link" href="#services--selector">Туризм и отдых </a></li>
+            <li class="nav-list__item"><a class="nav-list__item__link" href="#destinations--selector">Лучшие пляжи </a></li>
+            <li class="nav-list__item"><a class="nav-list__item__link" href="#travel--selector">Мы поможем </a></li>
+            <li class="nav-list__item"><a class="nav-list__item__link" href="#responses--selector">Отзывы</a></li>
+          </ul>
+        </nav>
+
+        <div class="login__actions">
+          <a>Вход</a>
+          <a class="bordered-link main__text__actions_purple"> Регистрация </a>
+          <input type="checkbox" id="check" />
+          <label for="check" class="check-btn bordered-link main__text__actions_purple">
+            <img class="burger-icon" src="/assets/icons/burger.svg" />
+          </label>
+        </div>
+      </div>
+    </header>
+
+    <section class="bg-section">
+      <main>
+        <section class="main container">
+          <div class="main__text">
+            <a class="bordered-link main__text_link"> <span>Исследуй Севастополь!</span><img src="./assets/icons/bag.svg" /> </a>
+
+            <div class="main__text__title">Гармония природы <span class="main__text__title--pink">Фиолент</span> в Севастополе</div>
+            <div class="main__text__subtitle">
+              Откройте для себя потрясающие виды Фиолента: чистейшие пляжи, изумрудное море и величественные скалы.
+            </div>
+
+            <div class="main__text__actions">
+              <a class="bordered-link main__text__actions_purple"> Начать </a>
+            </div>
+          </div>
+          <div class="main__media">
+            <img class="main__media__img scale" src="./assets/images/image-1.png" />
+            <img class="main__media__graphic main__media__graphic-1" src="./assets/icons/graphic-5.svg" />
+            <img class="main__media__img scale" src="./assets/images/image-2.png" />
+            <img class="main__media__img scale main__media__img_3" src="./assets/images/image-3.png" />
+            <img class="main__media__graphic main__media__graphic-2" src="./assets/icons/graphic-6.svg" />
+          </div>
+        </section>
+        <section class="companies container">
+          <img class="companies__graphic" src="./assets/icons/graphic-7.svg" />
+
+          <ul class="companies-list">
+            <li>
+              <img src="./assets/icons/company.svg" />
+            </li>
+            <li>
+              <img src="./assets/icons/company-1.svg" />
+            </li>
+            <li>
+              <img src="./assets/icons/company-2.svg" />
+            </li>
+            <li>
+              <img src="./assets/icons/company-3.svg" />
+            </li>
+            <li>
+              <img src="./assets/icons/company-4.svg" />
+            </li>
+          </ul>
+        </section>
+        <section class="services container" id="services--selector">
+          <div class="services__wrapper">
+            <div>
+              <div class="subtitle">Туризм и отдых</div>
+              <div class="title">Всё для комфортного отдыха</div>
+            </div>
+            <div class="services__cards">
+              <div class="services__card">
+                <div class="services__card__header">
+                  <img src="./assets/icons/globe.svg" />
+                </div>
+                <div class="services__card__title">Туризм</div>
+                <div class="services__card__subtitle">Уютные пляжи Фиолента: от дикого отдыха до комфортных зон с инфраструктурой.</div>
+              </div>
+              <div class="services__card services__card_shadowed">
+                <div class="services__card__header">
+                  <img src="./assets/icons/booking.svg" />
+                </div>
+                <div class="services__card__title">Отдых</div>
+                <div class="services__card__subtitle">Фиолент — идеальное место для отдыха всей семьёй.</div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </section>
+    <section class="destinations container" id="destinations--selector">
+      <img class="destinations__graphic" src="/assets/icons/graphic-8.svg" />
+      <div class="destinations">
+        <div class="subtitle">Лучшие пляжи</div>
+        <div class="title">Исследуй их все</div>
+      </div>
+
+      <div class="destination__cards">
+        <div class="destination__card scale">
+          <img class="destination__card__img" src="./assets/images/destination_image.png" />
+          <div class="destination__card__info">
+            <div class="destination__card__info__title">
+              Яшмовый пляж, Фиолент
+
+              <span class="destination__card__info__title-pink"></span>
+            </div>
+
+            <div class="destination__card__info__subtitle">Севастополь</div>
+
+            <div class="destination__card__info__rating">
+              4.8
+              <img src="./assets/icons/star.svg" />
+            </div>
+          </div>
+        </div>
+        <div class="destination__card scale">
+          <img class="destination__card__img" src="./assets/images/destination_image-1.png" />
+          <div class="destination__card__info">
+            <div class="destination__card__info__title">
+              Мыс Виноградный, скала Дракон, Фиолент
+
+              <span class="destination__card__info__title-pink"></span>
+            </div>
+
+            <div class="destination__card__info__subtitle">Севастополь</div>
+
+            <div class="destination__card__info__rating">
+              4.8
+              <img src="./assets/icons/star.svg" />
+            </div>
+          </div>
+        </div>
+        <div class="destination__card scale">
+          <img class="destination__card__img" src="./assets/images/destination_image-2.png" />
+          <div class="destination__card__info">
+            <div class="destination__card__info__title">
+              Мыс Виноградный, Фиолент
+
+              <span class="destination__card__info__title-pink"></span>
+            </div>
+
+            <div class="destination__card__info__subtitle">Севастополь</div>
+
+            <div class="destination__card__info__rating">
+              4.8
+              <img src="./assets/icons/star.svg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="travel" id="travel--selector">
+      <div class="travel__img">
+        <div class="travel__wrapper container">
+          <img src="./assets/images/woman.png" />
+          <div class="travel__info">
+            <div class="travel__info__titile">
+              <div class="subtitle">Мы поможем</div>
+              <div class="title">Как добраться и советы туристам</div>
+            </div>
+
+            <div class="travel__info__subtitle">Лучшие маршруты для трекинга и наслаждения видами Южного берега Крыма.</div>
+
+            <div class="travel__info__cards">
+              <div class="travel__info__card">
+                <div class="travel__info__card__title">100+</div>
+                <div class="travel__info__card__subtitle">Дней в году</div>
+              </div>
+              <div class="travel__info__card">
+                <div class="travel__info__card__title">10+</div>
+                <div class="travel__info__card__subtitle">Лет работы</div>
+              </div>
+              <div class="travel__info__card">
+                <div class="travel__info__card__title">2000+</div>
+                <div class="travel__info__card__subtitle">Счастливых посетителей</div>
+              </div>
+              <div class="travel__info__card">
+                <div class="travel__info__card__title">100+</div>
+                <div class="travel__info__card__subtitle">Хороших отзывов</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="features container">
+      <div class="features__wrapper">
+        <div class="features__info">
+          <div class="features__info__title">
+            <div class="subtitle">Фиолент</div>
+            <div class="title">место, где встречаются мечты и реальность.</div>
+          </div>
+          <div class="features__info__subtitle">
+            Закаты и рассветы на Фиоленте: идеальные моменты для вдохновляющих фото и незабываемых воспоминаний.
+          </div>
+
+          <div class="features__info__cards">
+            <div class="features__info__card">
+              <img src="./assets/icons/navigation.svg" />
+              <div class="features__info__card__info">
+                <div class="features__info__card__info__title">Выберите место отдыха</div>
+              </div>
+            </div>
+            <div class="features__info__card">
+              <img src="./assets/icons/calendar.svg" />
+              <div class="features__info__card__info">
+                <div class="features__info__card__info__title">Планируйте свой отдых</div>
+                <div class="features__info__card__info__subtitle">Можно забронировать за полгода вперед</div>
+              </div>
+            </div>
+            <div class="features__info__card">
+              <img src="./assets/icons/ticket.svg" />
+              <div class="features__info__card__info">
+                <div class="features__info__card__info__title">Получите билеты</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="features__media">
+          <img class="features__media__img features__media__img-back" src="./assets/images/features.png" />
+          <img class="features__media__img features__media__img-front" src="./assets/images/features-1.png" />
+        </div>
+      </div>
+    </section>
+    <section class="responses" id="responses--selector">
+      <div class="responses__wrapper">
+        <div class="responses__title">
+          <div class="subtitle">Отзывы</div>
+          <div class="title">Наши клиенты пишут</div>
+        </div>
+
+        <div class="track-wrapper">
+          <ul class="track">
+            <li class="track__item">
+              <div class="response">
+                <img
+                  class="slider-img"
+                  src="https://images.unsplash.com/photo-1523437237164-d442d57cc3c9?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=MnwxfDB8MXxyYW5kb218MHx8bGFuZHNjYXBlfHx8fHx8MTY1OTA1NDYzMw&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=300"
+                  alt=""
+                  width="30"
+                  height="30"
+                />
+
+                <div class="response__title">Иван</div>
+
+                <div class="response__rating">
+                  <img src="./assets/icons/star-yellow.svg" />
+                  <img src="./assets/icons/star-yellow.svg" />
+                  <img src="./assets/icons/star-yellow.svg" />
+                  <img src="./assets/icons/star-yellow.svg" />
+                  <img src="./assets/icons/star-yellow.svg" />
+                </div>
+
+                <div class="response__text">
+                  Хочу отметить профессионализм команды: консультанты подробно рассказали о маршрутах, помогли подобрать идеальный тур,
+                  учитывая наши предпочтения и уровень физической подготовки. Нам предложили не только стандартные экскурсии, но и
+                  возможность индивидуального тура, что оказалось невероятно удобным.
+                </div>
+              </div>
+            </li>
+            <li class="track__item">
+              <div class="response">
+                <img
+                  class="slider-img"
+                  src="https://images.unsplash.com/photo-1523437237164-d442d57cc3c9?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=MnwxfDB8MXxyYW5kb218MHx8bGFuZHNjYXBlfHx8fHx8MTY1OTA1NDYzMw&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=300"
+                  alt=""
+                  width="30"
+                  height="30"
+                />
+
+                <div class="response__title">Анна</div>
+
+                <div class="response__rating">
+                  <img src="./assets/icons/star-yellow.svg" />
+                  <img src="./assets/icons/star-yellow.svg" />
+                  <img src="./assets/icons/star-yellow.svg" />
+                  <img src="./assets/icons/star-yellow.svg" />
+                  <img src="./assets/icons/star-yellow.svg" />
+                </div>
+
+                <div class="response__text">
+                  Организация поездки была на высшем уровне. Всё, начиная от трансфера и заканчивая обедом, продумано до мелочей. Водитель
+                  был пунктуальным, а гид — настоящим знатоком региона. Его рассказы о легендах Фиолента, исторических фактах и природных
+                  особенностях сделали поездку не только увлекательной, но и познавательной.
+                </div>
+              </div>
+            </li>
+            <li class="track__item">
+              <div class="response">
+                <img
+                  class="slider-img"
+                  src="https://images.unsplash.com/photo-1523437237164-d442d57cc3c9?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=MnwxfDB8MXxyYW5kb218MHx8bGFuZHNjYXBlfHx8fHx8MTY1OTA1NDYzMw&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=300"
+                  alt=""
+                  width="30"
+                  height="30"
+                />
+
+                <div class="response__title">Марина</div>
+
+                <div class="response__rating">
+                  <img src="./assets/icons/star-yellow.svg" />
+                  <img src="./assets/icons/star-yellow.svg" />
+                  <img src="./assets/icons/star-yellow.svg" />
+                  <img src="./assets/icons/star-yellow.svg" />
+                  <img src="./assets/icons/star-yellow.svg" />
+                </div>
+
+                <div class="response__text">
+                  Рекомендую эту компанию всем, кто хочет провести время на Фиоленте с комфортом и в хорошей компании. Благодаря им мы
+                  увидели Крым с новой, совершенно волшебной стороны! Обязательно обратимся к ним снова для изучения других уголков
+                  полуострова. 🌿
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="subscription container">
+      <div class="subscription__wrapper">
+        <div class="subscription__title">
+          <div class="subtitle">Подпишитесь на нас</div>
+          <div class="title">и получайте все новости и обновления</div>
+        </div>
+        <div class="subscription__email">
+          <div class="input-group">
+            <img class="subscription__email__input__icon" src="/assets/icons/letter.svg" />
+            <input class="subscription__email__input" placeholder="Ваш эл. адрес" />
+          </div>
+          <a class="subscription__email__btn bordered-link main__text__actions_purple"> Подписаться </a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer container">
+      <div class="footer__wrapper">
+        <div class="footer__info">
+          <div class="footer__col footer__col-flex">
+            <div class="logo">
+              <img class="logo__icon" src="./assets/icons/logo.svg" />
+              <span class="logo__title">СевМир</span>
+            </div>
+            <div class="footer__col__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat praesentium pariatur corrupti tenetur sunt, cum nobis sequi
+              dolore soluta fuga natus, aliquam labore, officia minus! Ea veritatis dignissimos assumenda eos.
+            </div>
+
+            <div class="footer__info__links">
+              <img src="./assets/icons/facebook.svg" />
+              <img src="./assets/icons/twitter.svg" />
+              <img src="./assets/icons/instagram.svg" />
+            </div>
+          </div>
+        </div>
+        <div class="footer__links">
+          <div class="footer__col">
+            <div class="footer__col__title">Контакты</div>
+            <ul class="footer__col__items">
+              <a href="tel:+79782341234">+7(978)-234-12-34</a>
+              <a href="mailto:sevworld@mail.ru">sevworld@mail.ru</a>
+              <li>
+                Севастополь,<br />
+                ул. Большая Морская, 24
+              </li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <iframe
+              class="footer__map"
+              src="https://yandex.ru/map-widget/v1/?um=constructor%3A49e009faae59270f5d1f1b30dbfb6bed987c905ceb0bfa3c490435c6e3117e39&amp;source=constructor"
+              width="340"
+              height="340"
+              frameborder="0"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
