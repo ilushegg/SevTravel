@@ -177,7 +177,7 @@ img {
 }
 
 .main__media {
-  background: url(/assets/images/travel.svg);
+  background: url(assets/images/travel.svg);
   background-repeat: no-repeat;
   background-size: contain;
   width: 100%;
@@ -455,7 +455,7 @@ img {
 .features__wrapper::before {
   content: '';
   position: absolute;
-  background: url(/assets/icons/graphic-3.svg);
+  background: url(assets/icons/graphic-3.svg);
   height: 300px;
   width: 340px;
   background-repeat: no-repeat;
@@ -527,7 +527,7 @@ img {
 }
 
 .responses::before {
-  background-image: url(/assets/images/responses-bg.png);
+  background-image: url(assets/images/responses-bg.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -594,7 +594,7 @@ img {
 
 .subscription__wrapper::before {
   content: '';
-  background: url(/assets/icons/graphic.svg);
+  background: url(assets/icons/graphic.svg);
   position: absolute;
   top: -42px;
   left: -42px;
@@ -609,7 +609,7 @@ img {
 
 .subscription::before {
   content: '';
-  background: url(/assets/icons/graphic-2.svg);
+  background: url(assets/icons/graphic-2.svg);
   position: absolute;
   top: -160px;
   right: 0;
