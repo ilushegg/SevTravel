@@ -39,3 +39,33 @@
   aspect-ratio: 16/9;
   scroll-snap-align: center;
 }
+
+.custom__scroll {
+  @-moz-document url-prefix() {
+    scrollbar-width: thin;
+    scrollbar-color: var(--gray-light-2) var(--gray-light);
+  }
+}
+
+.custom__scroll::-webkit-scrollbar-track {
+  background: var(--gray-light);
+  border-radius: 3px;
+  visibility: hidden;
+}
+.custom__scroll:hover .custom__scroll::-webkit-scrollbar-thumb,
+.custom__scroll:hover .custom__scroll::-webkit-scrollbar-track {
+  visibility: visible;
+}
+.custom__scroll::-webkit-scrollbar-thumb {
+  background: var(--gray-light-2);
+  border-radius: 3px;
+  visibility: hidden;
+}
+.custom__scroll::-webkit-scrollbar-thumb:hover {
+  background: var(--gray);
+}
+
+.custom__scroll::-webkit-scrollbar {
+  width: 7px;
+  height: 5px;
+}
